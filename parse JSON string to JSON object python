@@ -1,0 +1,15 @@
+#Import the built-in Library in  python 
+import json
+def parsing(st):
+ # Write Exception Handling if the the JSON string is invalid
+  try:
+    return json.loads(st)
+  except:
+    print("Invalid JSON string input")
+    pass
+#Test the function  
+my_string='{"id":213,"name":"Asfetaw"}'
+print ("JSON string :",my_string)
+print("JSON Object:",parsing(my_string))
+  
+  
